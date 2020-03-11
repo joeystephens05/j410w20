@@ -1,118 +1,350 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Temporary Title Tag</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
-    </head>
-  <body>
-<div class="slideshow-container">
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 7</div>
-    <img src="img/img1.jpg" style="width:100%">
-    <div class="text">February 4th, 2020, Cal Poly San Luis Obispo, Baker Math and Science Building –
-Christine Wallace, Civilian Correspondent of San Luis Obispo Police Department and myself, Joey Stephens, facilitated a social risk management training to students of Cal Poly.  The goal of the presentation is to educate students on safe drinking habits, risks and liabilities that come with hosting or attending social events, and how to be compliant with both University policy and San Luis Obispo law.  
-</div>
-  </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 7</div>
-    <img src="img/img2.jpg" style="width:100%">
-    <div class="text">February 7, 2020, San Luis Obispo, Cal Poly Student Off-Campus Social Event – 
-A young woman waits to be checked into a registered student social event with alcohol as 4th year student and sober monitor, Brady Corcoran, finds her name on the guest list. Student organizations that choose to have off-campus social events are required to adhere to strict policies to ensure safety and proper risk management.  It is required that organizations submit a guest list for every social event they plan to host and to use it to check all guests into the event.  The goal is to know who exactly is at your event, so you know who exactly you are responsible for, should something go wrong.
-</div>
-  </div>
+<html>
+	
+<head>
+	
+<!--The following displays language used in browser to interpret page -->
+<meta charset="UTF-8">
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 7</div>
-    <img src="img/img3.jpg" style="width:100%">
-    <div class="text">February 7, 2020, San Luis Obispo, Cal Poly Student Off-Campus Social Event – 
-Students gathered to socialize on Friday evening after a long week of midterms and schoolwork.  When hosting social events at home with an outside area, overhead lights are encouraged, even though they are not required.  A well-lit area will provide for more vision and awareness for all guests in the event of an incident while individuals may be intoxicated.  Should individuals need to vacate the premises quickly for any reason, they will need to see where they are going.  Extra lighting also helps the host to see everything that is going on at their home and that all in attendance are acting appropriately.
-</div>
-  </div>
+<!--The following line of code displays the page title on a browser tab -->
+<title>Site Title | Home</title>
+
+<!--link tags are for linking to external files, in this case your CSS stylesheet-->
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<!--link tags are for linking to external files, in this case a special CSS stylesheet-->
+<link href="normalize.css" rel="stylesheet" type="text/css">
+
+<!--the following tag tells the browser to adjust the site according to screen size-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--The following code links to the jquery library -->
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+
+<!--The following code links to the javascript file that runs the slideshow -->	
+<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
     
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 7</div>
-    <img src="img/img4.jpg" style="width:100%">
-    <div class="text">February 7, 2020, San Luis Obispo, Cal Poly Student Off-Campus Social Event – 
-Two undergraduate students hold their margaritas in one hand and embrace each other with the other.  All alcohol served at off-campus social events must be under the 15% Alcohol by Volume limit, and while most margarita mixes are under that limit, they are discouraged due to the fact that they have to be poured into a cup.  Alcoholic beverages in an open cup increase risk several ways.  For instance, they can have other substances, or even more alcohol added to them very easily after it is out of the hand of the bartender.  
-</div>
-  </div>
-    
-  <div class="mySlides fade">
-    <div class="numbertext">5 / 7</div>
-    <img src="img/img5.jpg" style="width:100%">
-    <div class="text">February 7, 2020, San Luis Obispo, Cal Poly Student Off-Campus Social Event – 
-A student takes a canned beer from a sober monitor whose responsibility for the evening is to act as the bartender.  Student organizations are required to have a team of sober monitors at all off-campus social events with alcohol present.  It is also required that some sober monitors be behind a bar, as they are the ones who should distribute the alcohol.  If you can control how much and what type of alcohol your guests are drinking, rather than letting them bring their own alcohol (i.e. a bottle of vodka), you can ensure that no guest will become overly intoxicated
-</div>
-  </div>  
-    
-  <div class="mySlides fade">
-    <div class="numbertext">6 / 7</div>
-    <img src="img/img7.jpg" style="width:100%">
-    <div class="text">February 7, 2020, San Luis Obispo, Cal Poly Student Off-Campus Social Event – 
-Two students at a social event prepare to “shotgun” a beer.  “Shotgunning” is a form of rapid consumption of alcohol in which the beer is consumed in one single effort.  Any form of rapid consumption of alcohol is strictly prohibited at social events, as it encourages an unhealthy environment of binge drinking.  Consuming too much alcohol in a short span of time can lead to heavy intoxication and even incapacitation from alcohol.
-</div>
-  </div>
-    
-  <div class="mySlides fade">
-    <div class="numbertext">7 / 7</div>
-    <img src="img/img6.jpg" style="width:100%">
-    <div class="text">February 7, 2020, San Luis Obispo, Cal Poly Student Off-Campus Social Event – 
-3rd-year students, Jared Gormley and Nolan Binkele, discuss risk management strategy as they act as Sober Monitors for their organization.  A basis of 3 sober monitors is required at each event with alcohol present to be compliant with University policy.  Additionally, another sober  monitor is required for each 40 guests in attendance.  With an entire team of students acting sober monitors with different responsibilities, Gormley and Binkele act as the leaders, seeing that each monitor fulfills their respective roles.  
-</div>
-  </div>
+<!--The following code links to the javascript file that runs the parallax image -->    
+<script src="js/parallax.min.js"></script>
+	
+<!--The following code links to Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Raleway:900|Rubik" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+<!--The following javscript runs the jquery slideshow -->
+<script type="text/javascript">
+$('#slider').cycle({});
+</script>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+<!--The following javascript runs the nav bar which disappears on scroll-->
+<script type="text/javascript">
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span> 
-  <span class="dot" onclick="currentSlide(6)"></span> 
-  <span class="dot" onclick="currentSlide(7)"></span>
-</div>
-      <script>
-      var slideIndex = 1;
-showSlides(slideIndex);
+$(window).scroll(function(event){
+    didScroll = true;
+});
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
 }
+</script>
+    
+<!--Favicon - images are in a folder called 'fav'-->
+<link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+<link rel="manifest" href="img/fav/site.webmanifest">
+<link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!--End Favicon-->
+    
+<!--back to top button-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+window.onscroll = function() {scrollFunction()};
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
 }
-                              </script>
-    </body>  
 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}    
+</script>   
+</head>
 
+<body>
 
+<!--beginning of navigation section-->
+<header>
+<div class="nav-container">
+<div class="brand"><img src="img/logo.jpg" width="250" height="90" alt=""/></div>
+<nav>
+<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+  <ul class="nav-list">
+        <li>
+          <a href="#home">Welcome</a>
+        </li>
+	   <li>
+          <a href="#gal">Social Risk Management</a>
+		  </li>
+	  	<li>
+          <a href="#tl">Safe Drinking Habits</a>
+        </li>
+        <li>
+          <a href="#vid">Blast 825 Taproom</a>
+			</li>
+      <li>
+          <a href="#num">Sober Truths</a>
+			</li>
+      </ul>
+</nav>
+</div>
+<!--closing navigation tag-->
+</header>
+<!--end of navigation section-->
+    
+<!--main image-->
+<div class="container">
+</div>
+    <caption> Photo: Google Images</caption>
+<!--animated welcome-->
+<div class="wrapper">
+<!--animated welcome code here-->	
+</div>
+    
+<!--beginning of main content area-->
+    <div class="row whiteBG">
+<h2 id="home">Welcome</h2>
+<article>
+<p class="tab">Blurb 1<br><br>Blurb 2</p>
+<p class="tab"><a href="#gal">Social Risk Management</a></p>
+</article>
+</div>
+    
+<!--beginning of slideshow section-->
+<div class="row blueBG"><!--beginning of row-->
+<h2 id="gal">Mitigating Risk At Social Events with Alcohol</h2>
+<article><!--beginning of article-->
+<p class="tab">Cal Poly, San Luis Obispo</p>
+<!--beginning of slideshow-->
+<div id="slider"
+data-cycle-caption="#alt-caption"
+data-cycle-caption-template="{{alt}}"
+data-cycle-fx="scrollHorz"
+data-cycle-pause-on-hover="true"
+data-cycle-speed="200">
+<div class="cycle-prev"></div>
+<div class="cycle-next"></div>
+<img src="img/img1.jpg" width="100%" height="100%" alt="February 4th, 2020, Cal Poly San Luis Obispo, Baker Math and Science Building –
+Christine Wallace, Civilian Correspondent of San Luis Obispo Police Department and myself, Joey Stephens, facilitated a social risk management training to students of Cal Poly.  The goal of the presentation is to educate students on safe drinking habits, risks and liabilities that come with hosting or attending social events, and how to be compliant with both University policy and San Luis Obispo law."/>
+<img src="img/img2.jpg" width="100%" height="100%" alt="February 7, 2020, San Luis Obispo, Cal Poly Student Off-Campus Social Event – 
+A young woman waits to be checked into a registered student social event with alcohol as 4th year student and sober monitor, Brady Corcoran, finds her name on the guest list. Student organizations that choose to have off-campus social events are required to adhere to strict policies to ensure safety and proper risk management.  It is required that organizations submit a guest list for every social event they plan to host and to use it to check all guests into the event.  The goal is to know who exactly is at your event, so you know who exactly you are responsible for, should something go wrong."/>
+<img src="img/img3.jpg" width="100%" height="100%" alt="February 7, 2020, San Luis Obispo, Cal Poly Student Off-Campus Social Event – 
+Students gathered to socialize on Friday evening after a long week of midterms and schoolwork.  When hosting social events at home with an outside area, overhead lights are encouraged, even though they are not required.  A well-lit area will provide for more vision and awareness for all guests in the event of an incident while individuals may be intoxicated.  Should individuals need to vacate the premises quickly for any reason, they will need to see where they are going.  Extra lighting also helps the host to see everything that is going on at their home and that all in attendance are acting appropriately."/>
+<img src="img/img4.jpg" width="100%" height="100%" alt="February 7, 2020, San Luis Obispo, Cal Poly Student Off-Campus Social Event – 
+Two undergraduate students hold their margaritas in one hand and embrace each other with the other.  All alcohol served at off-campus social events must be under the 15% Alcohol by Volume limit, and while most margarita mixes are under that limit, they are discouraged due to the fact that they have to be poured into a cup.  Alcoholic beverages in an open cup increase risk several ways.  For instance, they can have other substances, or even more alcohol added to them very easily after it is out of the hand of the bartender."/>
+<img src="img/img5.jpg" width="100%" height="100%" alt="February 7, 2020, San Luis Obispo, Cal Poly Student Off-Campus Social Event – 
+A student takes a canned beer from a sober monitor whose responsibility for the evening is to act as the bartender.  Student organizations are required to have a team of sober monitors at all off-campus social events with alcohol present.  It is also required that some sober monitors be behind a bar, as they are the ones who should distribute the alcohol.  If you can control how much and what type of alcohol your guests are drinking, rather than letting them bring their own alcohol (i.e. a bottle of vodka), you can ensure that no guest will become overly intoxicated."/>
+<img src="img/img7.jpg" width="100%" height="100%" alt="February 7, 2020, San Luis Obispo, Cal Poly Student Off-Campus Social Event – 
+Two students at a social event prepare to “shotgun” a beer.  “Shotgunning” is a form of rapid consumption of alcohol in which the beer is consumed in one single effort.  Any form of rapid consumption of alcohol is strictly prohibited at social events, as it encourages an unhealthy environment of binge drinking.  Consuming too much alcohol in a short span of time can lead to heavy intoxication and even incapacitation from alcohol."/>
+<img src="img/img6.jpg" width="100%" height="100%" alt="February 7, 2020, San Luis Obispo, Cal Poly Student Off-Campus Social Event – 
+3rd-year students, Jared Gormley and Nolan Binkele, discuss risk management strategy as they act as Sober Monitors for their organization.  A basis of 3 sober monitors is required at each event with alcohol present to be compliant with University policy.  Additionally, another sober  monitor is required for each 40 guests in attendance.  With an entire team of students acting sober monitors with different responsibilities, Gormley and Binkele act as the leaders, seeing that each monitor fulfills their respective roles."/>
+</div><!--end of slideshow-->
+<!--beginning of slideshow caption-->
+<div id="alt-caption" class="center">
+</div><!--end of slideshow caption-->
+<p class="tab"><a href="#tl">Navigation</a></p>
+</article><!--end of article-->
+</div><!--end of row-->
+<!--end of slideshow section-->
+<svg class="editorial"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 24 150 28 "
+     preserveAspectRatio="none">
+ <defs>
+ <path id="gentle-wave"
+ d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+  </defs>
+  <g class="parallax1">
+   <use xlink:href="#gentle-wave" x="50" y="3" fill="#2aefb5"/>
+  </g>
+    <g class="parallax2">
+   <use xlink:href="#gentle-wave" x="50" y="0" fill="#4982e2"/>
+    </g>
+      <g class="parallax3">
+   <use xlink:href="#gentle-wave" x="50" y="9" fill="#2aefb5"/>
+   </g>
+    <g class="parallax4">
+   <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/>  
+  </g>
+</svg>
+<!--beginning of audio section-->
+<div class="row whiteBG">
+<h2 id="tl">How do you practice safe drinking habits?</h2>
+<article>
+  <p class="tab">Click on images to hear what these students do to keep themselves safe while consuming<br>(Double-click to pause audio)</p>
+  <div class="table">
+	<div id="trip">
+<audio id="audio_1">
+    <source src="audio/1.mp3" type="audio/mpeg" />
+</audio>        
+<audio id="audio_2">
+    <source src="audio/2.mp3" type="audio/mpeg" />
+</audio>        
+<audio id="audio_3">
+	<source src="audio/3.mp3" type="audio/mpeg" />
+</audio>
+        
+<img src="img/1.gif" class="image2" alt="description" onMouseOver="this.src='img/4.jpg'" onMouseOut="this.src='img/1.gif'" onClick="document.getElementById('audio_1').play(); return false;" onDblClick="document.getElementById('audio_1').pause(); return false;">
+ /&gt; 
+            
+<img src="img/2.gif" class="image2" alt="description" onMouseOver="this.src='img/4.jpg'" onMouseOut="this.src='img/2.gif'" onClick="document.getElementById('audio_2').play(); return false;" onDblClick="document.getElementById('audio_2').pause(); return false;">
+ /&gt;
+            
+<img src="img/3.gif" class="image2" alt="description" onMouseOver="this.src='img/4.jpg'" onMouseOut="this.src='img/3.gif'" onClick="document.getElementById('audio_3').play(); return false;" onDblClick="document.getElementById('audio_3').pause(); return false;">
+/&gt;
+</div>
+</div>
+</article>
+
+</div>
+<!--end of audio section-->
+    
+<!--beginning of parallax image-->
+<div class="parallax" data-parallax="scroll" data-bleed="10" data-speed="0.2" iosFix="true" data-image-src="img/parallax.jpg">
+</div>
+<!--end of parallax image-->
+
+<!--beginning of video section-->
+<div class="row orangeBG">
+<h2 id="vid">Self-Serve At Blast 825 Taproom</h2>
+<article>
+<p class="tab">Downtown San Luis Obispo</p>	
+<video width="100%" height="100%" poster="img/poster.png" controls>
+<source src="img/video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p class="tab"><a href="#num">Navigation</a></p>
+</article>
+</div>
+<!--end of video section-->
+
+<!--beginning of infographic section-->
+<div class="row whiteBG">
+<h2 id="num">Heading</h2>
+<article>
+<p class="tab"></p>
+<!--infographic embed code here-->
+</article>
+    <div class="infogram-embed" data-id="2b139d53-7329-4ce6-b548-c319557f28e0" data-type="interactive" data-title="Ocean Sand"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:5px!important;text-align:center;border-top:1px solid #dadada;margin:0 10px"><a href="https://infogram.com/2b139d53-7329-4ce6-b548-c319557f28e0" style="color:#989898!important;text-decoration:none!important;" target="_blank">Ocean Sand</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+   
+</div>
+    
+<!--end of infographic section-->
+
+<!--beginning of footer-->
+<footer>Site Name Here | San Luis Obispo, CA | <a href="mailto: email@email.com?Subject=Inquiry" target="_top">Send Email</a> | Copyright 20__ | Site by You 
+</footer>
+<!--end of footer-->
+	
+</body>
+	
+<!--the following script controls the responsive navigation-->
+<script>
+	(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+	</script>
+	<script>
+	var headertext = [];
+var headers = document.querySelectorAll("#miyazaki th"),
+tablerows = document.querySelectorAll("#miyazaki th"),
+tablebody = document.querySelector("#miyazaki tbody");
+for(var i = 0; i < headers.length; i++) {
+	var current = headers[i];
+	headertext.push( current.textContent.replace( /\r?\n|\r/,"") );
+}
+for (var i = 0, row; row = tablebody.rows[i]; i++) {
+	for (var j = 0, col; col = row.cells[j]; j++) {
+		col.setAttribute("data-th", headertext[j]);
+	}
+}
+</script>
+	
+	<!----Prevents audio tracks from playing simultaneously---->
+<script>
+document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+    </script>
 
 </html>
