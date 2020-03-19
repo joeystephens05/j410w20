@@ -110,7 +110,7 @@ a.text:hover, a.text:active {
     color: black;
 }
 .row a{
-	color: black;
+	color: white;
     font-family: "Karla";
     text-transform: uppercase;
     padding: .5rem 1rem;
@@ -125,7 +125,7 @@ a.text:hover, a.text:active {
     font-size: 16px;
     font-weight: 600;
     line-height: initial;
-    background: url(img/arrow.png) #a2ffe8;
+    background: url(img/arrow.png) #2aefb5;
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: 96%;
@@ -243,25 +243,19 @@ a.text:hover, a.text:active {
 .image1 {
 	width: 100%;
 }
-
 .container {
-	position: relative;
+    position: relative;
     background-image: url(img/main.jpg);
-    height: 100vh;
-    background-size: cover;
+    height: 82vh;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: 50% 50%;
-}
-.responsive {
-    width: 100%;
-    height: auto;
-}
-body
-{
+} 
+.body {
   margin:0;
   padding:0;
   background-color: transparent;
 }
-
 .editorial {
   display: block;
   width: 100%;
@@ -375,10 +369,7 @@ p {
     font-size: 16px;
     color: black;
 }
-.caption{
-    position: left;
-    font-size: 5px;   
-}
+  
 /*----------------SLIDESHOW-----------------*/
 
 #slider {
